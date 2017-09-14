@@ -8,11 +8,4 @@ package com.dedykuncoro.searchviewmysql.model
 class DataModel {
     var id: String? = null
     var nama: String? = null
-
-    constructor() {}
-
-    constructor(id: String, nama: String) {
-        this.id = id
-        this.nama = nama
-    }
 }
