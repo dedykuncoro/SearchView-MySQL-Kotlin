@@ -60,8 +60,8 @@ class MainActivity : AppCompatActivity(), SwipeRefreshLayout.OnRefreshListener, 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        swipe = findViewById(R.id.swipe_refresh) as SwipeRefreshLayout
-        list_view = findViewById(R.id.list_view) as ListView
+        swipe = findViewById<View>(R.id.swipe_refresh) as SwipeRefreshLayout
+        list_view = findViewById<View>(R.id.list_view) as ListView
 
         adapter = Adapter(applicationContext, listData)
         list_view.adapter = adapter
